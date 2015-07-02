@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单</title>
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body> 
+<form class="form-horizontal">
+   <div class="row has-success has-feedback">
+   <div class="col-xs-6">
+     <label class="control-label" for="inputSuccess1">成功状态</label>
+    <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态" >
+    <span class="help-block">你输入的信息是正确的</span>
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+   </div>
+    
+  </div>
+
+    <label for="inputName" class="col-sm-2 control-label">用户名</label>
+    <div class="col-sm-3">
+      <input type="email" class="form-control" id="inputName" placeholder="请输入邮箱/手机号">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPwd" class="col-sm-2 control-label">登录密码</label>
+    <div class="col-sm-3">
+      <input type="pwd" class="form-control" id="inputPwd" placeholder="请输入登录密码">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label for="egCheckbox1" class="checkbox-inline">
+          <input type="checkbox" name="egCheckbox" id="egCheckbox1"> 记住密码
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label for="egCheckbox1" class="checkbox-inline">
+          <input type="checkbox" name="egCheckbox" id="eg1Checkbox1" value="yes"> 足球
+        </label>
+        <label for="egCheckbox2" class="checkbox-inline">
+          <input type="checkbox" name="egCheckbox" id="eg1Checkbox2" value="no"> 篮球
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="radio">
+        <label for="egRadio1" class="radio-inline">
+          <input type="radio" name="sex" id="egRadio1" value="female" checked> 女性
+        </label>
+        <label for="egRadio2" class="radio-inline">
+          <input type="radio" name="sex" id="egRadio2" value="male"> 男性
+        </label>
+        <label for="egRadio3" class="radio-inline">
+          <input type="radio" name="sex" id="egRadio3" value="middle"> 中性
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-danger">体验一下</button>
+    </div>
+  </div>
+  <div class="form-group">
+    <div div class="col-sm-offset-2 col-sm-10">
+      <select  class="from-control">
+        <option>JAVA</option>
+        <option>php</option>
+      </select>
+      <select multiple class="from-control">
+        <option>JAVA</option>
+        <option>php</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-5"><input type="text" class="input-sm form-control" placeholder="比正常小" disabled></div>
+    <div class="col-xs-3"><input type="text" class="form-control" placeholder="正常">  </div>
+    <div class="col-xs-2"><input type="text" class="input-lg form-control" placeholder="比正常大"></div>   
+  </div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputSuccess1">成功状态</label>
+  <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态" >
+  <span class="glyphiconglyphicon-ok form-control-feedback"></span>
+</div>
+</form>
+</body>
+</html>
