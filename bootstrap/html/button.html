@@ -26,8 +26,11 @@
 	<button class="btn btn-sm btn-block btn-primary">小型按钮.btn-sm</button>
 	<button class="btn btn-xs btn-block btn-primary">超小型按钮.btn-xs</button>
 	<h3>禁用状态:</h3>
-	<a href="http://www.baidu.com" class="btn btn-primary" disabled="disabled">通过disabled属性禁用按钮 -点我</a>
-	<a href="http://www.baidu.com" class="btn btn-primary disabled">通过.disabled类禁用按钮-点我</a>
+	<form>
+		<input type="text" placeholder="再次修改值 通过reset测试属性和类禁用的区别" style="width:400px">
+		<button type="reset" class="btn btn-primary" disabled="disabled">通过属性disabled</button>
+		<button type="reset" class="btn btn-primary disabled">通过类.disabled</button>
+	</form>
 	<h3>其他标签按钮:</h3>
 	<button class="btn btn-default">button标签按钮</button>
 	<input  type="submit" class="btn btn-default" value="input标签按钮" />
