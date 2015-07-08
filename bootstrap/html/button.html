@@ -6,6 +6,82 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 </head>
 <body>
+	<h3>等分按钮:</h3>
+通过a实现
+<div class="btn-group btn-group-justified">
+	<a href="##" class="btn btn-default">首页</a>
+	<a href="##" class="btn btn-default">产品展示</a>
+	<a href="##" class="btn btn-default">案例分析</a>
+	<a href="##" class="btn btn-default">联系我们</a>
+</div>
+<br/>通过button实现 浏览器支持不友好
+<div class="btn-group btn-group-justified">
+	<button class="btn btn-default">首页</button>
+	<button class="btn btn-default">产品展示</button>
+	<button class="btn btn-default">案例分析</button>
+	<button class="btn btn-default">联系我们</button>
+</div>
+<h3>垂直嵌套分组:</h3>
+<div class="btn-group-vertical">
+<button class="btn btn-default">首页</button>
+<div class="btn-group">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">产品展示
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="##" target="_self">收割机</a></li>
+		<li><a href="##" target="_self">电动机</a></li>
+		<li><a href="##" target="_self">拖拉机</a></li>
+		<li><a href="##" target="_self">挖掘机</a></li>	
+	</ul>
+</div>
+</button>
+<button class="btn btn-default">案例分析</button>
+<button class="btn btn-default">联系我们</button>
+<div class="btn-group">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">关于我们
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="##" target="_self">公司简介</a></li>
+		<li><a href="##" target="_self">企业文化</a></li>
+		<li><a href="##" target="_self">组织架构</a></li>
+		<li><a href="##" target="_self">客户服务</a></li>
+	</ul>
+</div>
+</button>
+
+</div>
+<h3>嵌套分组:</h3>
+<div class="btn-group">
+<button class="btn btn-default">首页</button>
+<div class="btn-group">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">产品展示
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="##" target="_self">收割机</a></li>
+		<li><a href="##" target="_self">电动机</a></li>
+		<li><a href="##" target="_self">拖拉机</a></li>
+		<li><a href="##" target="_self">挖掘机</a></li>	
+	</ul>
+</div>
+</button>
+<button class="btn btn-default">案例分析</button>
+<button class="btn btn-default">联系我们</button>
+<div class="btn-group">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">关于我们
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="##" target="_self">公司简介</a></li>
+		<li><a href="##" target="_self">企业文化</a></li>
+		<li><a href="##" target="_self">组织架构</a></li>
+		<li><a href="##" target="_self">客户服务</a></li>
+	</ul>
+</div>
+</button>
+</div>
 	<h3>按钮风格:</h3>
 	<button class="btn" type="button">基础按钮.btn</button>
 	<button class="btn btn-default" type="button">默认按钮.btn-default</button>
@@ -61,5 +137,7 @@
   border-radius: 4px;
 }
 	</pre>
+<script src="../script/jquery.min.js"></script>
+<script src="../script/bootstrap.min.js"></script> 
 </body>
 </html>

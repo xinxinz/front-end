@@ -2,12 +2,100 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>布局</title>
+<title>导航和导航条</title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h3>面包屑(breadcrumb)-导航</h3>
+
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar-header">
+		<a href="##" class="navbar-brand">慕课网</a>
+	</div>
+	<ul class="nav navbar-nav nav-pills">
+		<li><a href="##" >navbar-btn</a></li>
+		<li><a href="##" >navbar-btn</a></li>
+		<li><a href="##" >navbar-btn</a></li>
+		<li><a href="##" >navbar-btn</a></li>
+	</ul>
+</div>
+<h3>导航条的按钮-文本-链接</h3>
+<div class="navbar navbar-default">
+	<div class="navbar-header">
+		<a href="##" class="navbar-brand">慕课网</a>
+	</div>
+	<div class="nav navbar-nav nav-pills">
+		<a href="##" class="navbar-text">navbar-btn</a>
+		<a href="##" class="navbar-text">navbar-btn</a>
+		<a href="##" class="navbar-text">navbar-btn</a>
+		<a href="##" class="navbar-text">navbar-btn</a>
+	</div>
+</div>
+
+</div>
+<h3>带表单的导航条</h3>
+<div class="navbar navbar-default">
+	<div class="navbar-header">
+		<a href="##" class="navbar-brand">慕课网</a>
+	</div>
+	<ul class="nav navbar-nav nav-pills">
+		<li><a href="##">网站首页</a></li>
+		<li class="dropdown">
+			<a href="##" class="dropdown-toggle" data-toggle="dropdown">
+				系列教程
+				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="##">JAVA</a></li>
+				<li><a href="##">IOS</a></li>
+				<li><a href="##">HTML5</a></li>
+				<li><a href="##">Android</a></li>
+			</ul>
+		</li>
+		<li><a href="##">名师介绍</a></li>
+		<li><a href="##">名师介绍</a></li>
+		<li><a href="##">关于我们</a></li>
+	</ul>
+	<form class="navbar-form navbar-left">
+		<input type="text" placeholder="请输入关键词" class="from-control">
+		<button type="submit" class="btn btn-default">搜索</button>
+	</form>
+</div>
+<h3>导航条-标题-二级菜单-状态</h3>
+<div class="navbar navbar-default">
+	<div class="navbar-header">
+		<a href="##" class="navbar-brand">慕课网</a>
+	</div>
+	<ul class="nav navbar-nav">
+		<li><a href="">网站首页</a></li>
+		<li class="dropdown">
+			<a href="" class="dropdown-toggle" data-toggle="dropdown">
+				系列教程
+				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="##">HTML5</a></li>
+				<li><a href="##">IOS</a></li>
+				<li><a href="##">JAVA</a></li>
+				<li><a href="##">Android</a></li>
+			</ul>
+		</li>
+		<li><a href="">名师介绍</a></li>
+		<li><a href="">成功案例</a></li>
+		<li class="active"><a href="">关于我们</a></li>
+	</ul>
+</div>
+<h3>基础-导航条</h3>
+<div class="navbar navbar-default">
+	<ul class="nav navbar-nav">
+		<li><a href="">网站首页</a></li>
+		<li><a href="">系列教程</a></li>
+		<li><a href="">名师介绍</a></li>
+		<li><a href="">成功案例</a></li>
+		<li><a href="">关于我们</a></li>
+	</ul>
+</div>
+<h3>面包屑(breadcrumb)-导航</h3>
 	<h6>正常</h6>
 	<ol class="breadcrumb">
 		<li><a href="##">首页</a></li>
@@ -27,7 +115,7 @@
 		<li class="disabled">大漠谣</a></li>
 	</ol>
 	<h3>二级导航</h3>
-	<div class="nav nav-pills">
+	<ul class="nav nav-pills">
 		<li class="active"><a href="##">首页</a></li>
 		<li class="dropdown">
 			<a href="##" class="dropdown-toggle" data-toggle="dropdown">
@@ -44,183 +132,95 @@
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h3>自适应(justified)-导航</h3>
 	<h5>自适应导航会根据浏览器视窗大小改变 小于768px会成垂直显示</h5>
 	<h6>基础自适应</h6>
-	<div class="nav nav-justified">
+	<ul class="nav nav-justified">
 		<li class="active"><a href="##">首页</a></li>
 		<li><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li class="disabled"><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h6>标签自适应</h6>
-	<div class="nav nav-justified nav-tabs">
+	<ul class="nav nav-justified nav-tabs">
 		<li class="active"><a href="##">首页</a></li>
 		<li><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li class="disabled"><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h6>胶囊自适应</h6>
-	<div class="nav nav-justified nav-pills">
+	<ul class="nav nav-justified nav-pills">
 		<li class="active"><a href="##">首页</a></li>
 		<li><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li class="disabled"><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h3>垂直堆叠胶囊型(stacked)-导航</h3>
 	<h6>可以增加分割线</h6>
-	<div class="nav nav-pills nav-stacked">
+	<ul class="nav nav-pills nav-stacked">
 		<li class="active"><a href="##">首页</a></li>
 		<li><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li class="nav-divider"></li>
 		<li><a href="##">商品评价</a></li>
 		<li class="disabled"><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h3>胶囊型(pills)-导航</h3>
 	<h6>正常情况下</h6>
-	<div class="nav nav-pills">
+	<ul class="nav nav-pills">
 		<li><a href="##">首页</a></li>
 		<li><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h6>选中情况下</h6>
-	<div class="nav nav-pills">
+	<ul class="nav nav-pills">
 		<li><a href="##">首页</a></li>
 		<li class="active"><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h6>禁用情况下</h6>
-	<div class="nav nav-pills">
+	<ul class="nav nav-pills">
 		<li><a href="##">首页</a></li>
 		<li class="disabled"><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 
 	<h3>标签型(tabs)-导航</h3>
 	<h6>正常情况下</h6>
-	<div class="nav nav-tabs">
+	<ul class="nav nav-tabs">
 		<li><a href="##">首页</a></li>
 		<li><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h6>选中情况下</h6>
-	<div class="nav nav-tabs">
+	<ul class="nav nav-tabs">
 		<li><a href="##">首页</a></li>
 		<li class="active"><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li><a href="##">售后服务</a></li>
-	</div>
+	</ul>
 	<h6>禁用情况下</h6>
-	<div class="nav nav-tabs">
+	<ul class="nav nav-tabs">
 		<li><a href="##">首页</a></li>
 		<li class="disabled"><a href="##">商品介绍</a></li>
 		<li><a href="##">规格参数</a></li>
 		<li><a href="##">商品评价</a></li>
 		<li><a href="##">售后服务</a></li>
-	</div>
-	<h3>网格布局</h3>
-  <div class="container">
-  		<div class="row">
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-		    <div class="col-md-1">.col-md-1</div>
-  		</div>
-  		<div class="row">
-		    <div class="col-md-4">.col-md-4</div>
-		    <div class="col-md-8">.col-md-8</div>
-  		</div>
-  		<div class="row">
-		    <div class="col-md-4">.col-md-4</div>
-		    <div class="col-md-4">.col-md-4</div>
-		    <div class="col-md-4">.col-md-4</div>
-  		</div>
-  		<div class="row">
-		    <div class="col-md-3">.col-md-3</div>
-		    <div class="col-md-6">.col-md-6</div>
-		    <div class="col-md-3">.col-md-3</div>
-  		</div>
-	</div>
-	<h3>表格偏移</h3>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2">.col-md-2</div>
-			<div class="col-md-2 col-md-offset-1">2格宽 向右偏移1个表格.col-md-2 .col-md-offset-1</div>
-			<div class="col-md-2 col-md-offset-1">2格宽 向右偏移1个表格.col-md-2 .col-md-offset-1</div>
-			<div class="col-md-3 col-md-offset-1">3格宽 向右偏移1个表格.col-md-3 .col-md-offset-1</div>
-		</div>
-	</div>
-	<h3>列排序</h3>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">.col-md-4</div>
-			<div class="col-md-8">.col-md-8</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-md-push-8">.col-md-4 .col-md-push-8</div>
-			<div class="col-md-8 col-md-pull-4">.col-md-8 .col-md-pull-4</div>
-		</div>
-	</div>
-	<h3>列嵌套</h3>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">.col-md-8 我的里面嵌套了一个网格
-				<div class="row">
-				<div class="col-md-6">.col-md-6</div>
-				<div class="col-md-6">.col-md-6</div>
-				</div>
-			</div>
-			<div class="col-md-4">.col-md-4</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">.col-md-4</div>
-			<div class="col-md-8">.col-md-8我的里面嵌套了一个网格
-				<div class="row">
-					<div class="col-md-4">.col-md-4</div>
-					<div class="col-md-4">.col-md-4</div>
-					<div class="col-md-4">.col-md-4</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-8">.col-md-8 我的里面嵌套了一个网格
-				<div class="row">
-					<div class="col-md-8">.col-md-8</div>
-					<div class="col-md-4">.col-md-4</div>
-				</div>
-			</div>
-			<div class="col-md-4">.col-md-4 我的里面嵌套了一个网格
-				<div class="row">
-					<div class="col-md-9">.col-md-9</div>
-					<div class="col-md-3">.col-md-3</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<script src="../script/jquery.min.js"></script>
-<script src="../script/bootstrap.min.js"></script> 
+	</ul>
+	<script src="../script/jquery.min.js"></script>
+	<script src="../script/bootstrap.min.js"></script> 
 </body>
 </html>
