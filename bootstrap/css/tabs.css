@@ -1,3 +1,6 @@
+h5{
+	margin: 10px;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -32,18 +35,80 @@
 	border-bottom: 1px solid #eee;
 	padding:0px 1px;
 }
-.notice-tit li a:link,.notice-tit li a:visited{
+.notice li a:link,.notice li a:visited{
 	text-decoration:none;
 	color: #000;
 }
-.notice-tit li a:hover{
+.notice li a:hover{
 	color:#f90;
 }
-.notice-tit li.selected{
+.notice li.selected{
 	background:#fff;
 	border-bottom-color: #fff;
 	border-right:1px solid #eee;
 	border-left:1px solid #eee;
 	font-weight:bold;
 	padding:0px 0px;
+}
+.notice-con .mod{
+	margin:15px 10px 10px 19px;
+}
+.notice-con .mod ul li{
+	width:134px;
+	height:25px;
+	float:left;
+	overflow:hidden;
+}
+
+.menu{
+	margin: 10px;
+	width:397px;
+	height: 98px;
+	border: 1px solid #eee;
+}
+.menu-tit{
+	height: 30px;
+	background-color: #eee;
+	position: relative;
+}
+.menu-tit ul{
+	width: 401px;
+	position: absolute;
+	left: -1px;
+}
+.menu-tit ul li{
+	float: left;
+	overflow: hidden;
+	width: 55px;
+	height: 29px;
+	text-align: center;
+	line-height: 29px;
+	border-bottom: 1px solid #eee;
+	padding: 0px 1px;
+}
+.menu ul li a:link, .menu ul li a:visited{
+	text-decoration:none;
+	color: #000;
+}
+.menu ul li a:hover{
+	color: #f70;
+}
+.menu-tit ul li.selected{
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+	border-bottom-color: #fff;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	padding: 0px; 
+}
+.menu-con{
+	margin: 8px 9px;
+}
+.menu-con ul li{
+	width: 120px;
+	height: 25px;
+	float: left;
+	text-align:center;
+	line-height:25px;
 }
