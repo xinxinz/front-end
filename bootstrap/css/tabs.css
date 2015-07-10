@@ -1,3 +1,27 @@
+.menu{
+	margin: 10px;
+	width: 198px;
+	height: auto;
+	border:1px solid #ccc;
+}
+.menu p{
+	background-color: #eee;
+	height: 29px;
+	line-height: 29px;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	font-weight: bold;
+	padding: 0px 0px 0px 5px;
+}
+.menu p:hover{
+	cursor:pointer;
+}
+.menu li{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	padding: 0px 0px 0px 5px;
+}
 h5{
 	margin: 10px;
 }
@@ -7,24 +31,24 @@ h5{
 	list-style: none;
 	font-size:12px;
 }
-.notice{
+.mouse-click{
 	width:298px;
 	height: 98px;
 	border: 1px solid #eee;
 	margin:10px;
 	overflow:hidden; 
 }
-.notice-tit{
+.mouse-click-tit{
 	height: 27px;
 	background: #F7F7F7;
 	position: relative;
 }
-.notice-tit ul{
+.mouse-click-tit ul{
 	width: 301px;
 	position: absolute;
 	left: -1px;
 }
-.notice-tit li{
+.mouse-click-tit li{
 	height:26px;
 	width:58px;
 	float:left;
@@ -35,14 +59,14 @@ h5{
 	border-bottom: 1px solid #eee;
 	padding:0px 1px;
 }
-.notice li a:link,.notice li a:visited{
+.mouse-click li a:link,.mouse-click li a:visited{
 	text-decoration:none;
 	color: #000;
 }
-.notice li a:hover{
+.mouse-click li a:hover{
 	color:#f90;
 }
-.notice li.selected{
+.mouse-click li.selected{
 	background:#fff;
 	border-bottom-color: #fff;
 	border-right:1px solid #eee;
@@ -50,33 +74,33 @@ h5{
 	font-weight:bold;
 	padding:0px 0px;
 }
-.notice-con .mod{
+.mouse-click-con .mod{
 	margin:15px 10px 10px 19px;
 }
-.notice-con .mod ul li{
+.mouse-click-con .mod ul li{
 	width:134px;
 	height:25px;
 	float:left;
 	overflow:hidden;
 }
 
-.menu{
+.mouse-over,.mouse-delay,.auto{
 	margin: 10px;
 	width:397px;
 	height: 98px;
 	border: 1px solid #eee;
 }
-.menu-tit{
+.mouse-over-tit,.mouse-delay-tit,.auto-tit{
 	height: 30px;
 	background-color: #eee;
 	position: relative;
 }
-.menu-tit ul{
+.mouse-over-tit ul,.mouse-delay-tit ul,.auto-tit ul{
 	width: 401px;
 	position: absolute;
 	left: -1px;
 }
-.menu-tit ul li{
+.mouse-over-tit ul li,.mouse-delay-tit ul li,.auto-tit ul li{
 	float: left;
 	overflow: hidden;
 	width: 55px;
@@ -86,14 +110,14 @@ h5{
 	border-bottom: 1px solid #eee;
 	padding: 0px 1px;
 }
-.menu ul li a:link, .menu ul li a:visited{
+.mouse-over ul li a:link, .mouse-over ul li a:visited,.mouse-delay ul li a:link, .mouse-delay ul li a:visited,.auto ul li a:link, .auto ul li a:visited{
 	text-decoration:none;
 	color: #000;
 }
-.menu ul li a:hover{
+.mouse-over ul li a:hover,.mouse-delay ul li a:hover,.auto ul li a:hover{
 	color: #f70;
 }
-.menu-tit ul li.selected{
+.mouse-over-tit ul li.selected,.mouse-delay-tit ul li.selected,.auto-tit ul li.selected{
 	background-color: #fff;
 	color: #000;
 	font-weight: bold;
@@ -102,10 +126,10 @@ h5{
 	border-left: 1px solid #eee;
 	padding: 0px; 
 }
-.menu-con{
+.mouse-over-con,.mouse-delay-con,.auto-con{
 	margin: 8px 9px;
 }
-.menu-con ul li{
+.mouse-over-con ul li,.mouse-delay-con ul li,.auto-con ul li{
 	width: 120px;
 	height: 25px;
 	float: left;
