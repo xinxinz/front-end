@@ -78,17 +78,63 @@ window.onload=function(){
 	var auto_p=$('auto-tit').getElementsByTagName('li'),
 			auto_ul=$('auto-con').getElementsByTagName('div');
 	var autoTimer=null, index=0;
+	//判断页签和展示的个数
 	if (auto_p.length != auto_ul.length) return;
+	if (timer) {
+		clearInterval(timer);
+		timer=null;
+	}
+	//定时任务 2秒钟执行一次
 	timer=setInterval(function() {
 		index++;
 		if (index >= auto_p.length) 
 			index=0;
+		changeOptionById(index);
+	},2000);
+	//鼠标移入的操作
+	for (var i = 0; i < auto_p.length; i++) {
+		auto_p[i].id=i;
+		auto_p[i].onmouseover=function(){
+			if (timer) {
+				clearInterval(timer);
+				timer=null;
+			};
+			changeOptionById(this.id);
+		}
+		//鼠标移除的操作
+		auto_p[i].onmouseout=function(){
+			timer=setInterval(function() {
+				index++;
+				if (index >= auto_p.length) 
+					index=0;
+				changeOptionById(index);
+			},2000);
+		}
+	}
 
+	function changeOptionById (curId) {
 		for (var i = 0; i < auto_p.length; i++) {
 			auto_p[i].className='';
 			auto_ul[i].style.display='none';
 		}
-		auto_p[index].className='selected';
-		auto_ul[index].style.display='block';
-	},2000);
+		auto_p[curId].className='selected';
+		auto_ul[curId].style.display='block';
+	}
+
+	var map_ul=$('focus-map-index').getElementsByTagName('li'),
+		map_div=$('focus-map-con').getElementsByTagName('div');
+	if (map_div.length!=map_ul.length) return;
+
+	for (var i = 0; i < map_ul.length; i++) {
+		map_ul[i].id=i;
+		map_div[i].id=i;
+		map_ul[i].onmouseover=function(){
+			for (var j = 0; j < map_div.length; j++) {
+				map_ul[j].className='';
+				map_div[j].style.display='none';
+			}
+			map_ul[this.id].className='selected';
+			map_div[this.id].style.display='block';
+		}
+	};
 }

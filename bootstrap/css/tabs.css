@@ -1,3 +1,38 @@
+.focus-map{
+	margin: 10px;
+	position: relative;
+	width: 490px;
+	height: auto;
+	border: 1px solid red;
+}
+.focus-map-con div img{
+	width: 490px;
+}
+.focus-map-index{
+	position: absolute;
+	right:0px;
+	bottom: 5px;
+}
+.focus-map-index li{
+	background-color: #ccc;
+	border: 1px solid #666;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	float: left;
+	font-size: 16px;
+	margin:0px 8px 0px 0px;
+}
+.focus-map-index li:hover{
+	background-color: #E97305;
+	cursor: pointer;
+}
+.focus-map-index li.selected{
+	background-color: #E97305;
+	cursor: pointer;
+}
+
 .menu{
 	margin: 10px;
 	width: 198px;
