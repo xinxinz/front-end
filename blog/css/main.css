@@ -1,0 +1,64 @@
+nav{
+	background-color: #ccc;
+	height: 50px;
+}
+nav ul{
+	margin: 0;
+	list-style: none;
+	float: right;
+}
+nav div.logo{
+	margin: 0px 0px 0px 10px;
+	display: inline-block;
+	height: inherit;
+	float: left;
+	line-height: 50px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 50px;
+	margin: 0px 8px 0px 0px;
+}	
+
+nav a{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	line-height: 50px;
+}
+#banner{
+	background-color: #777;
+	height:500px; 
+}
+#banner .inner{
+	max-width: 300px;
+	margin: 0px auto;
+	text-align: center;
+
+	position: relative;
+	top: 150px;
+}
+#banner .inner h1{
+	margin: 0;
+}
+#banner .inner p{
+	line-height: 30px;
+	margin: 20px 0px;
+}
+button{
+	border: none;
+	padding: 10px 40px;
+	background-color: #696969;
+	color: #000;
+
+}
+
+#banner .inner button{
+	padding: 10px 40px;
+}
+#banner div.inner div.more{
+	width: 50px;
+	margin: 0px auto;
+	position: relative;
+	top: 110px;
+}
