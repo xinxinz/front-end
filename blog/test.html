@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>布局</title>
+</head>
+<style>
+	.header{
+		background: #333;
+		height: 100px;
+	}
+	.content{
+		background: red;
+		height: 300px
+	}
+	.content>div{
+		float: left;
+	}
+	.content:after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+	.content .left{
+		height: inherit;
+		background: yellow;
+		width: 200px;
+	}
+	.content .right{
+		height: inherit;
+		background: purple;
+	}
+	.footer{
+		background: black;
+		height: 100px;
+	}
+</style>
+<body>
+<div class="header"></div>
+<div class="content">
+	<div class="left"></div>
+	<div class="right"></div>
+</div>
+<div class="footer"></div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>混合布局编程挑战</title>
+<style type="text/css">
+.top{
+	background: #444;
+	height: 100px;
+}
+.main{
+	background: red;
+	height: 500px;
+}
+.main > div{
+	/*clear: both;
+	display: block;
+	content: '';*/
+	float: left;
+}
+.main:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.main .left{height: inherit; width: 200px; background: blue;}
+.main .right{height: inherit; background: yellow;}
+.foot{background: rgba(113,34,45,0.9); height: 50px}
+</style>
+
+</head>
+
+<body>
+<div class="top">top</div>
+<div class="main">
+	<div class="left">left</div>
+    <div class="right">right</div>
+    
+</div>
+<div class="foot">foot</div>
+
+</body>
+</html>
